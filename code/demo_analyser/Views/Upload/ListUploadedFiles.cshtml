@@ -1,0 +1,10 @@
+﻿@model List<string>
+
+<h2>Uploaded Files</h2>
+
+<ul>
+    @foreach (var blobUrl in Model)
+    {
+        <li><a href="@blobUrl" target="_blank">@blobUrl</a></li>
+    }
+</ul>
